@@ -1,16 +1,14 @@
 fun main() {
-    println("Olá mundo!")
+    // variaveis mutaveis
+    var name = "Pedro Paulo"
+    // variaveis mutaveis são aquelas que pode ter seu valor trocado a qualquer momento
+    name = "Joana D'arc"
+    // variaveis imutaveis
+    val idade = 23
+    // variaveis imutaveis pode ser declarada sem a atribuição de um valor
+    // mas ápos o valor da variavel ser definido ele não pode mais ser trocado.
+    val x
+    x = 10
 
-    var nome = "Pedro"
-    var idade:Byte = 40
-    // printando o tipo de dados
-    println(nome.javaClass.name)
-    println(idade.javaClass.name)
-    // printando o tamanho mínimo e máximo de um tipo de dado
-    println("Double: máx: " + Double.MAX_VALUE + ", min: " + Double.MIN_VALUE)
-    println("Float: máx: " + Float.MAX_VALUE + ", min: " + Float.MIN_VALUE)
-    println("Long: máx: " + Long.MAX_VALUE + ", min: " + Long.MIN_VALUE)
-    println("Int: máx: " + Int.MAX_VALUE + ", min: " + Int.MIN_VALUE)
-    println("Short: máx: " + Short.MAX_VALUE + ", min: " + Short.MIN_VALUE)
-    println("Byte: máx: " + Byte.MAX_VALUE + ", min: " + Byte.MIN_VALUE)
+    println(name)
 }

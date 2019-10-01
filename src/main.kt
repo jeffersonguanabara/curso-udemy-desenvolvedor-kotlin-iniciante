@@ -1,15 +1,10 @@
-fun calculaBonus(a : Int, b : Int, c : Int) = "O bônus é: ${a + b * c * 2}"
-
-fun hello(nome : String) : String = "Olá, $nome"
-
-fun soma(a : Int, b : Int) = a + b
+fun contaCaracteres(palavra: kotlin.String) : Int {
+    return palavra.length;
+}
 
 fun main() {
-    val a = 10
-    val b = 20
-    val c = 30
 
-    println(calculaBonus(a, b, c))
-    println(soma(a, b))
-    println(hello("Pedro"))
+    var palavra: kotlin.String = "Hipopotamo"
+
+    println("Tamanho da palavra ${palavra}: " + contaCaracteres(palavra))
 }

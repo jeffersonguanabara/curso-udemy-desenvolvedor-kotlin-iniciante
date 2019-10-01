@@ -1,31 +1,24 @@
 fun calculaBonus(cargo : String, salario : Float) : Float {
     // Gerente Junior, Gerente Senior, Coordenador
 
-    val bonus : Float
-    if(cargo == "Coordenador")
-        bonus = salario * 1.2f
-    else if (cargo == "Gerente Junior")
-        bonus = salario * 1.5f
-    else if (cargo == "Gerente Senior")
-        bonus = salario * 2
-    else
-        bonus = salario
-
-    return  bonus
+    return if (cargo == "Coordenador") {
+        salario * 1.2f
+    } else if (cargo == "Gerente Junior") {
+        salario * 1.5f
+    } else if (cargo == "Gerente Senior") {
+        salario * 2
+    } else {
+        salario
+    }
 }
 
-fun verificaMaiorIdade(idade : Int) : Boolean {
-    return idade >= 18
-}
 
 fun main() {
 
-    var idade : Int = 10
-    println("João tem ${idade} anos, portanto é " + verificaMaiorIdade(idade) + " que João é maior de idade")
-    idade = 15
-    println("Paulo tem ${idade} anos, portanto é " + verificaMaiorIdade(idade) + " que Paulo é maior de idade")
-    idade = 23
-    println("Lucas tem ${idade} anos, portanto é " + verificaMaiorIdade(idade) + " que Lucas é maior de idade")
+//    operador ternario no kotlin
+    val valor = 10
+    val str = if (valor == 10) "Sim" else "Não"
+    print(str)
 
     println()
 
